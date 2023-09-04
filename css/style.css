@@ -6,6 +6,31 @@
     box-sizing: border-box;
 }
 
+/*DEBUG*/
+
+.debug .page-header {
+	padding: 20px;
+	background-color: rgb(6, 229, 245);
+	min-height: 80px;
+}
+
+.debug .page-header [class^='col-'] {
+	padding: 10px;
+	border: 2px solid rgb(100, 237, 107);
+	color: white;
+	font-weight: 700;
+}
+.debug .conteiner {
+	padding: 10px;
+	border: 2px solid black;
+}
+
+.debug .row {
+	padding: 10px;
+	border: 2px solid red;
+}
+
+
 /*HEADER*/
 
 .page-header {
