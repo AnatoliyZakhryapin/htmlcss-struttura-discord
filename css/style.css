@@ -1,5 +1,56 @@
+/*RESET RULES*/
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.page-header {
+    background-color: #add8e6;
+    padding: 10px;
+}
+
+.page-header>nav {
+    background-color: #daa520;
+}
+
+.page-header .col-6 {
+    text-align: center;
+}
+
+.page-header .row>:last-child {
+    text-align: right;
+}
+
+/*ROW and COL*/
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row div {
+    border-style: dashed;
+}
+
+* [class^='col-'] {
+    padding: 10px;
+}
+
+.col-3 {
+    flex-basis: calc(100% / 4);
+}
+
+.col-6 {
+    flex-basis: calc(100% / 2);
+}
+
+
+
+.conteiner {
+    margin: 0 auto;
+    max-width: 1000px;
 }
