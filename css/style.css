@@ -13,14 +13,20 @@
     border: 2px solid black;
 }
 
-.debug .page-header [class^='col-'] {
+.debug .page-header [class^='col-'], .debug .footer-content__botom [class^='col-']:not(.col-logo, .col-bottone) {
 	padding: 10px;
 	border: 2px solid rgb(100, 237, 107);
 	color: white;
 	font-weight: 700;
 }
 
-.debug .main-content [class^='col-'] {
+.col-logo, .col-bottone {
+    border: 2px solid rgb(100, 237, 107);
+	color: white;
+	font-weight: 700;
+}
+
+.debug .main-content [class^='col-'], .debug .footer-content .footer-content__top [class^='col-']{
 	padding: 10px;
     min-height: 300px;
 	border: 2px solid rgb(100, 237, 107);
@@ -47,14 +53,21 @@
 	border: 2px solid red;
 }
 
-.debug .row {
-	padding: 10px;
-	border: 2px solid red;
-}
-
 .debug section {
     padding: 20px;
     border: 2px solid black;
+}
+
+.debug .footer-content section.footer-content__top {
+    padding-top: 10px;
+}
+
+.debug .footer-content section.footer-content__botom {
+    padding-bottom: 0;
+}
+
+.debug.col-logo {
+    padding-left: 0;
 }
 
 /*HEADER*/
@@ -91,8 +104,12 @@
     justify-content: center;
 }
 
-* [class^='col-'] {
+*[class^='col-']:not(.col-logo, .col-bottone) {
     padding: 10px;
+}
+
+.col-2 {
+    flex-basis: calc(100% / 6);
 }
 
 .col-3 {
