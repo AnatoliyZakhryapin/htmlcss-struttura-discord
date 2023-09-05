@@ -8,44 +8,28 @@
 
 /*DEBUG*/
 
-.debug .page-header, .debug .main-content {
-	min-height: 60px;
-    border: 2px solid black;
+.debug .page-header>nav {
+    background-color: #daa520;
 }
 
-.debug .page-header [class^='col-'], .debug .footer-content__botom [class^='col-']:not(.col-logo, .col-bottone) {
-	padding: 10px;
-	border: 2px solid rgb(100, 237, 107);
-	color: white;
-	font-weight: 700;
-}
-
-.col-logo, .col-bottone {
-    border: 2px solid rgb(100, 237, 107);
+.debug .page-header [class^='col-'], .debug .main-content [class^='col-'], .d {
+    padding: 10px;
+	border: 2px dashed rgb(100, 237, 107);
 	color: white;
 	font-weight: 700;
 }
 
 .debug .main-content [class^='col-'], .debug .footer-content .footer-content__top [class^='col-']{
-	padding: 10px;
     min-height: 300px;
-	border: 2px solid rgb(100, 237, 107);
-	color: rgb(0, 0, 0);
-	font-weight: 700;
 }
 
 .debug .main-content>:last-child [class^='col-'] {
-	padding: 10px;
     min-height: 600px;
-	border: 2px solid rgb(100, 237, 107);
-	color: rgb(0, 0, 0);
-	font-weight: 700;
 }
 
 .debug .conteiner {
 	padding: 10px;
 	border: 2px solid black;
-    background-color: aquamarine;
 }
 
 .debug .row {
@@ -66,19 +50,11 @@
     padding-bottom: 0;
 }
 
-.debug.col-logo {
-    padding-left: 0;
-}
-
 /*HEADER*/
 
 .page-header {
     background-color: #add8e6;
     padding: 10px;
-}
-
-.page-header>nav {
-    background-color: #daa520;
 }
 
 .page-header .col-6 {
@@ -89,14 +65,19 @@
     text-align: right;
 }
 
-/*ROW and COL*/
+/*ROW, COL and CONTEINER*/
+
+.conteiner {
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
 .row {
     display: flex;
     justify-content: space-between;
 }
 
-.row div[class^='col-'] {
+[class^='col-'] {
     border-style: dashed;
 }
 
@@ -136,11 +117,8 @@
     flex-basis: calc(100% / 1);
 }
 
-
-.conteiner {
-    margin: 0 auto;
-    max-width: 1000px;
-}
-
 /*MAIN CONTENT*/
 
+section {
+    padding: 20px;
+}
