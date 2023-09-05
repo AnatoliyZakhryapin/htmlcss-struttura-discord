@@ -66,8 +66,36 @@
 
 .debug .min-height500 .col-12 {
 	background-color: #228b22;
-	min-height: 500px;
+	min-height: 600px;
 }
+
+.debug .footer-content {
+    background-color: #23272a;
+}
+
+.debug .footer-content__top {
+    padding-top: 10px;
+}
+
+.debug .footer-content__botom {
+    padding-bottom: 0;
+}
+
+.debug .footer-content__top [class^='col-'] {
+    padding: 10px;
+	border: 1px dashed rgb(255, 255, 255);
+    min-height: 500px;
+}
+
+.debug .footer-content__top .col-4 {
+    background-color: #f08080;
+}
+
+.debug .footer-content__top .col-2 {
+    background-color: #20b2aa;
+}
+
+
 
 /**/
 
@@ -75,16 +103,6 @@
 .debug .row {
 	padding: 10px;
 	border: 2px solid red;
-}
-
-
-
-.debug .footer-content section.footer-content__top {
-    padding-top: 10px;
-}
-
-.debug .footer-content section.footer-content__botom {
-    padding-bottom: 0;
 }
 
 /*HEADER*/
